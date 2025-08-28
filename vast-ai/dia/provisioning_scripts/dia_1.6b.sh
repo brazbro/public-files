@@ -17,6 +17,8 @@ cd "${DATA_DIRECTORY}"
 git clone "$APP_REPO_URL"
 cd $(basename "$APP_REPO_URL")
 git checkout "$APP_REF"
+
+# Replace app.py with 
 pip install -e .
 
 # Download the models.  Not strictly necessary because app.py handles this but gives user more insight into the startup and allows retry on failure
